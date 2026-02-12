@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fundamentos de HTML-CSS - Módulo 6: CSS - Maquetación Web">
+        <meta name="keywords" content="html, css, javascript">
+        <meta name="author" content="Ahsly Valentina Manosalba">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>MOD 7 ejercicios</title>
+        <link rel="stylesheet" href="css/estilo.css">        
+    </head> 
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🚀 Módulo 7: JavaScript</h1>
+                <p>Fundamentos de Programación para la Web</p>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="p2">Progreso del Curso: 75% - Módulo 7 de 8</p>
+            </div>
+            <div class="content">
+                <div class="tab-content active" id="tab0">
+                    <div class="lesson">
+                        <h2>🏋️ Ejercicios Prácticos</h2>
+                        <p>Pon en práctica todo lo aprendido con estos ejercicios interactivos.</p>
+
+                        <div class="exercise">
+                            <h3>Ejercicio 1: Validador de Edad</h3>
+                            <p>validador que determina si una persona puede votar (mayor de 18 años).</p>
+                            <div class="interactive-demo">
+                                <input type="number" id="edadVotar" placeholder="Ingresa tu edad" min="0" max="120">
+                                <button class="btn" onclick="validarEdad()">Validar</button>
+                                <div id="resultadoEdad" class="result" style="display:none;"></div>
+                            </div>
+                        </div>
+
+                        <div class="exercise">
+                            <h3>Ejercicio 2: Calculadora de Promedio</h3>
+                            <p>Calcula el promedio de 3 calificaciones y determina si el estudiante aprobó (promedio &gt;= 60).</p>
+                            <div class="interactive-demo">
+                                <input type="number" id="nota1" placeholder="Nota 1" min="0" max="100">
+                                <input type="number" id="nota2" placeholder="Nota 2" min="0" max="100">
+                                <input type="number" id="nota3" placeholder="Nota 3" min="0" max="100">
+                                <button class="btn" onclick="calcularPromedio()">Calcular Promedio</button>
+                                <div id="resultadoPromedio" class="result" style="display:none;"></div>
+                            </div>
+                        </div>
+
+                        <div class="exercise">
+                            <h3>Ejercicio 3: Contador de Palabras</h3>
+                            <p>contador que muestra cuántas palabras hay en el texto ingresado.</p>
+                            <div class="interactive-demo">
+                                <textarea id="textoInput" placeholder="Escribe tu texto aquí..." style="width: 100%; min-height: 100px; padding: 10px; border: 2px solid #667eea; border-radius: 5px; font-family: inherit;"></textarea>
+                                <button class="btn" onclick="contarPalabras()">Contar Palabras</button>
+                                <div id="resultadoPalabras" class="result" style="display:none;"></div>
+                            </div>
+                        </div>
+
+                        <div class="exercise">
+                            <h3>Ejercicio 4: Lista de Tareas</h3>
+                            <p>lista de tareas interactiva donde puedes agregar y eliminar tareas.</p>
+                            <div class="interactive-demo">
+                                <input type="text" id="tareaInput" placeholder="Nueva tarea..." style="width: 70%;">
+                                <button class="btn" onclick="agregarTarea()">Agregar</button>
+                                <div id="listaTareas" style="margin-top: 15px;"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    <script src="js/MOD7.js"></script>
+    </body>
+</html>

@@ -1,0 +1,306 @@
+/* Formateo inicial Sitio Web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Configuración del cuerpo de la página*/ 
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: url(../img/Fondo7.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.header {
+    background-image: url(../img/banner7.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.header p{
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+.progress-bar {
+    background: rgba(255,255,255,0.2);
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.progress-fill {
+    background: #4ade80;
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+}
+.p2{
+    margin-top: 10px; 
+    font-size: 0.9em;
+}
+.content { padding: 40px;}
+.section.active{
+    display: block;
+    animation: fadeIn 0.5s;
+}
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+.theory {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 5px solid #667eea;
+    line-height: 1.8;
+}
+h3 {
+    color: #764ba2;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.theory ul, .theory ol{
+    margin: 15px 0 15px 30px;
+}
+.code-example {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+    position: relative;
+}
+.code-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #667eea;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.code-example pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+.demo-box {
+    border: 2px dashed #667eea;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #f1f5f9;
+}
+.demo-title {
+    background: #667eea;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+h4 {
+    color: #667eea;
+    margin: 15px 0 10px 0;
+    font-size: 1.1em;
+}
+.space_between{
+    display: flex; 
+    justify-content: space-between; 
+    background: #f1f5f9; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+}
+.center{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    background: #f1f5f9; 
+    padding: 15px; 
+    border-radius: 8px;
+}
+.center1{
+    background: #764ba2; 
+    color: white; 
+    padding: 15px; 
+    border-radius: 5px;
+}
+
+.tip strong { color: #1e40af;}
+.tip ul { margin: 10px 0 0 20px;}
+
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background: #667eea;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/*Taller 23*/
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+.lesson {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #667eea;
+}
+.example {
+    background: white;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.btn {
+    background: #667eea;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin: 5px;
+}
+.output-box {
+    background: #2d2d2d;
+    color: #50fa7b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: 'Courier New', monospace;
+    min-height: 50px;
+    text-align: left;
+}
+.btn:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+.string {color: #50fa7b;}
+.comment {color: #6272a4;}
+.keyword {color: #ff79c6;}
+.number {color: #bd93f9;}
+.function {color: #8be9fd;}
+
+.lesson h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.lesson p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.lesson h3 {
+    color: #764ba2;
+    margin: 20px 0 15px 0;
+    font-size: 1.3em;
+}
+.code-block {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.tip {
+    background: #e7f3ff;
+    border-left: 4px solid #2196F3;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.interactive-demo {
+    background: white;
+    border: 2px dashed #667eea;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+input[type="text"], input[type="number"], select {
+    padding: 10px;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 5px;
+}
+.example h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 2px;
+}
